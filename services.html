@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Miwacle Cosplay Rental</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link href="servicesStyle.css" rel="stylesheet" />
+    <link
+      rel="icon"
+      href="images/PROFILE LOGO-GOLD.png"
+      type="image/icon type"
+    />
+  </head>
+  <body>
+    <!-- NAVIGATION BAR -->
+    <nav
+      class="navbar navbar-dark sticky-top nav-white navbar-expand-sm bg-dark-blue mt-0"
+    >
+      <div class="container-fluid mx-2">
+        <a href="home.html" class="navbar-brand"
+          ><img
+            src="images/PROFILE LOGO-GOLD.png"
+            alt="Miwacle-Gold-Logo"
+            id="logo"/></a>
+        <button
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          class="navbar-toggler"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav align-items-center">
+            <li class="nav-item mx-4">
+              <a href="home.html" class="nav-link">HOME</a>
+            </li>
+            <li class="nav-item mx-4">
+              <a href="about.html" class="nav-link">ABOUT</a>
+            </li>
+            <li class="nav-item mx-4">
+              <a href="#" class="nav-link text-color-gold-yellow text-decoration-underline">SERVICE</a>
+            </li>
+            <li class="nav-item mx-4">
+              <a href="gallery.html" class="nav-link">GALLERY</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- MODAL -->
+    <div
+      class="modal fade"
+      id="itemModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby=""
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content text-white">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body" id="modalContent">
+            <img src="images/" alt="" id="modalImage" />
+            <div class="bg-semi-transparent-black">
+              <div class="mx-3 py-3">
+                <p class="m-0">
+                  <strong>Name:</strong> <span id="modalItemName"></span>
+                </p>
+                <p class="m-0">
+                  <strong>Price:</strong> <span id="modalItemPrice"></span>
+                </p>
+                <p class="m-0">
+                  <strong> Description: </strong> <br />
+                  <span id="modalItemDesc"></span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SERVICES HEADER -->
+    <div
+      class="container-fluid d-flex justify-content-center align-items-center mb-5 extra-margin-bottom"
+    >
+      <img
+        src="images/MIWACLE-CONTAINER.png"
+        alt="Miwacle Services Header
+      Frame"
+        class="position-absolute"
+        id="headerFrame"
+      />
+      <h1 class="text-center text-decoration-underline text-color-gold-yellow">
+        Services
+      </h1>
+    </div>
+    <br /><br /><br />
+
+    <!-- PROMO RENT / CAROUSEL -->
+    <div class="container d-flex justify-content-center align-items-center">
+      <img
+        src="images/MIWACLE-FRAME.png"
+        alt="Miwacle Frame"
+        class="position-absolute"
+        id="promoFrame"
+      />
+      <div
+        id="carouselIndicators"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="images/MIWACLE-PROMO.png"
+              class="d-block"
+              alt="Miwacle Promo 1"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/MIWACLE-PROMO-2.jpg"
+              class="d-block"
+              alt="Miwacle Promo 2"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/MIWACLE-PROMO-3.jpg"
+              class="d-block"
+              alt="Miwacle Promo 3"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- <img src="images/MIWACLE-PROMO.png" alt="Miwacle Promo" /> -->
+    </div>
+    <br /><br /><br />
+
+    <!-- FILTERS -->
+    <div class="container text-light">
+      <!-- ITEM FILTERS -->
+      <form id="filters" class="my-3">
+        <select name="filter" id="filter" value="All">
+          <option value="All">All</option>
+          <option value="Anime">Anime</option>
+          <option value="Games">Games</option>
+          <option value="Misc">Misc.</option>
+        </select>
+
+        <input
+          type="checkbox"
+          name="sex"
+          id="Male"
+          value="male"
+          class="ms-2"
+          checked
+        />
+        <label for="Male">Male</label>
+        <input
+          type="checkbox"
+          name="sex"
+          id="Female"
+          value="female"
+          class="ms-2"
+          checked
+        />
+        <label for="Female">Female</label>
+      </form>
+
+      <!-- ITEM CONTAINER -->
+      <div
+        class="d-flex justify-content-evenly align-content-evenly flex-wrap pt-5"
+        id="item-container"
+      >
+        <!-- ITEMS -->
+      </div>
+    </div>
+
+    <!-- ORDER BUTTON -->
+    <div class="container d-flex justify-content-center my-5">
+      <a href="#" id="order" target="_blank">Order</a>
+    </div>
+
+    <!-- FOOTER -->
+    <div
+      class="container-fluid position-relative sticky-bottom bg-primary mb-0"
+      id="footer"
+    >
+      <div class="d-flex flex-column">
+        <div>
+          <img src="images/facebookIcon.png" class="icon me-2 my-1" />Miwacle
+          Cosplay Rentals / Miwah Coser
+        </div>
+        <div>
+          <img src="images/phoneIcon.png" class="icon me-2 my-1" />09217284200
+        </div>
+        <div>
+          <img
+            src="images/emailIcon.png"
+            class="icon me-2 my-1"
+          />miwahcos@gmail.com
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+    <script src="servicesScript.js"></script>
+  </body>
+</html>

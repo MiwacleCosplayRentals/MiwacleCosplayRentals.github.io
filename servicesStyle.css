@@ -1,0 +1,267 @@
+/* 
+https://rhodesmill.org/brandon/2011/concentric-css/
+-=CONCENTRIC CSS=-
+{
+    display: ;    // Where and how the is placed
+    position: ;
+    float: ;
+    clear: ;
+
+    visibility: ;  // Can the box be seen?
+    opacity: ;
+    z-index: ; 
+
+    margin: ;     // Layers of the box model
+    outline: ;
+    border: ;
+    background: ;
+    padding: ;
+
+    width: ;      // Content dimensions and scrollbars
+    height: ;
+    overflow: ;
+
+    color: ;      // Text
+    text: ;
+    font: ;
+}
+*/
+
+@font-face {
+  font-family: laSignora;
+  src: url(fonts/LaSignora-DemoVersion-Regular.otf);
+}
+
+@font-face {
+  font-family: theBlowar;
+  src: url(fonts/TheBlowarRegular-d91mZ.ttf);
+}
+
+@font-face {
+  font-family: bismark;
+  src: url(fonts/Bismarck.otf);
+}
+
+:root {
+  --dark-blue: #03032b;
+  --darker-white: #d8cfc5;
+  --gold-yellow: #eaca86;
+}
+
+* {
+  font-family: "laSignora";
+}
+
+body {
+  background-image: url("images/MIWACLE-BACKGROUND.png");
+  background-size: cover;
+  font-size: 1.4rem;
+}
+
+h1 {
+  font-size: 6rem;
+  font-family: "bismark";
+}
+
+/* TEXT AND BACKGROUND COLOR */
+.bg-dark-blue {
+  background-color: #03032b;
+}
+
+.text-color-specialYellow {
+  color: #eaca86;
+}
+
+.text-color-yellow {
+  color: #cf920f;
+}
+
+.text-color-gold-yellow {
+  color: var(--gold-yellow) !important;
+}
+
+.bg-semi-transparent-black {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+/* NAV CLASSES AND IDS*/
+#logo {
+  width: 75px;
+  height: 75px;
+}
+
+.nav-link {
+  color: #d8cfc5; 
+  transition: color 0.25s ease, transform 0.25s ease, font-size 0.25s ease;
+}
+
+.nav-link:hover {
+  color: var(--gold-yellow) !important;
+  transform: scale(1.1);      
+  font-size: 1.6rem;          
+}
+
+.nav-item a {
+  color: #d8cfc5;
+}
+
+nav {
+  margin-bottom: 10vh;
+}
+
+/* HEADER */
+#headerFrame {
+  width: 494.4px;
+  height: 251.52px;
+}
+
+/* PROMO RENT FRAME AND OR CAROUSEL */
+#promoFrame {
+  width: 580.8px;
+  height: 580.8px;
+}
+
+#promoFrame + img {
+  width: 448.8px;
+  height: 448.8px;
+}
+
+.carousel-inner {
+  width: 448.8px;
+  height: 448.8px;
+}
+
+.carousel-item > img {
+  width: 448.8px;
+  height: 448.8px;
+  object-fit: cover;
+}
+
+/* FILTER + ITEM CONTAINER + ITEM AND ITEM IMAGES */
+#filter {
+  border: 5px solid var(--gold-yellow);
+  border-radius: 15px;
+
+  padding: 0.5rem 1rem;
+
+  background-color: var(--dark-blue);
+  color: white;
+}
+
+
+#item-container {
+  height: 80vh;
+  max-height: 80vh !important;
+  overflow-y: scroll;
+  border: 5px solid var(--gold-yellow);
+  border-radius: 1rem;
+
+  background-color: #00000050;
+}
+
+#item-container::-webkit-scrollbar {
+  width: 0.75rem;
+}
+
+#item-container::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+#item-container::-webkit-scrollbar-thumb {
+  background-color: hsla(41, 70%, 72%, 0.5);
+  border-radius: 1rem;
+}
+
+#item-container::-webkit-scrollbar-thumb:hover {
+  background-color: hsla(41, 70%, 72%, 0.25);
+}
+
+.modal-header {
+  background-image: url("images/MODALHEADERBG.png");
+  background-size: contain;
+  background-position: center;
+}
+
+#modalContent {
+  overflow-y: scroll;
+  max-height: 85vh;
+  background-image: url("images/MODALBG.png");
+}
+
+.modal-header .btn-close {
+  color: white;
+  font-size: 2rem; /* Increase font size */
+  width: 3rem; /* Set custom width */
+  height: 3rem; /* Set custom height */
+}
+
+#modalContent > img {
+  width: 100%;
+  border: 1px solid black;
+}
+
+.image-grid {
+  display: grid;
+  grid-template: 250px / 250px;
+}
+
+.image-grid img {
+  grid-row: 1/2;
+  grid-column: 1/2;
+
+  width: 250px;
+  height: 250px;
+}
+
+.item {
+  display: flex;
+
+  cursor: pointer;
+
+  max-width: 250px;
+}
+
+.my-grid {
+  display: grid;
+  grid-template: 250px/ 250px;
+}
+
+/* ORDER BUTTON */
+#order {
+  border: 5px solid var(--gold-yellow);
+  border-radius: 1rem;
+  background-color: var(--dark-blue);
+  padding: 0.5rem 2rem;
+
+  color: white;
+  font-size: 2rem;
+  text-decoration: none;
+
+  transition: transform 0.25s ease-in-out, padding 0.1s, font-size 0.25s ease-in-out;
+  display: inline;
+}
+
+#order:hover {
+  transform: scale(1.1); 
+  padding: 0.5rem 2.3rem; 
+  font-size: 2.1rem;
+  color: #eaca86;
+}
+
+/* FOOTER */
+#footer {
+  padding: 2rem;
+  background-image: url("images/MIWACLE-FOOTER-BG.png");
+  background-size: cover;
+}
+
+#footer * {
+  color: white;
+  font-family: "theBlowar";
+}
+
+.icon {
+  width: 2rem;
+  height: 2rem;
+}

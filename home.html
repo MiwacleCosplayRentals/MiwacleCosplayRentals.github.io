@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Miwacle Cosplay Rental</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link href="homeStyle.css" rel="stylesheet" />
+    <link
+      rel="icon"
+      href="images/PROFILE LOGO-GOLD.png"
+      type="image/icon type"
+    />
+  </head>
+  <body>
+    <!-- NAVIGATION BAR -->
+    <nav
+      class="navbar navbar-dark sticky-top nav-white navbar-expand-sm bg-dark-blue mt-0"
+    >
+      <div class="container-fluid mx-2">
+        <a href="#" class="navbar-brand"
+          ><img
+            src="images/PROFILE LOGO-GOLD.png"
+            alt="Miwacle-Gold-Logo"
+            id="logo"
+        /></a>
+        <button
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          class="navbar-toggler"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav align-items-center">
+            <li class="nav-item mx-4">
+              <a href="#" class="nav-link text-color-gold-yellow text-decoration-underline">HOME</a>
+            </li>
+            <li class="nav-item mx-4">
+              <a href="about.html" class="nav-link">ABOUT</a>
+            </li>
+            <li class="nav-item mx-4">
+              <a href="services.html" class="nav-link">SERVICE</a>
+            </li>
+            <li class="nav-item mx-4">
+              <a href="gallery.html" class="nav-link">GALLERY</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HOME BANNER -->
+
+    <div class="homeBanner">
+      <img src="images/HomeBanner.png" alt="Banner" class="w-100" />
+    </div>
+
+    <!-- PROMO RENT / CAROUSEL -->
+    <div
+      class="container-fluid d-flex justify-content-center align-items-center py-6 bg-semi-transparent-white"
+    >
+      <img
+        src="images/MIWACLE-FRAME.png"
+        alt="Miwacle Frame"
+        class="position-absolute"
+        id="promoFrame"
+      />
+      <div
+        id="carouselIndicators"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/MIWACLE-PROMO.png" class="d-block" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="images/MIWACLE 2 GOLD.png" class="d-block" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="images/MIWACLE 2 WHITE.png" class="d-block" alt="..." />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- <img src="images/MIWACLE-PROMO.png" alt="Miwacle Promo" /> -->
+    </div>
+
+    <!-- HOME LINE -->
+    <div class="d-flex justify-content-center">
+      <img
+        src="images/HOME_LINE.png"
+        class="object-center object-fill w-75 mx-auto"
+      />
+    </div>
+
+    <!-- ABOUT US AND SERVICES -->
+    <div
+      class="container-fluid d-flex flex-wrap justify-content-center"
+      id="pagesContainer"
+      >
+      <div
+        class="flex-column align-items-center justify-content-center "
+        id="AboutUs"
+        >
+        <h1>About Us</h1>
+        <p class="mx-auto w-75">
+          Where your Dream Cosplans Come True.
+          <br />
+          At Miwacle Cosplay Rentals, we provide celestial-quality rental
+          costumes at an affordable price. May our customers reach the stars and
+          burn bright like Sol.
+        </p>
+        <a href="about.html" class="text-decoration-none"
+          ><input class="linkButton" type="button" value="More" />
+        </a>
+      </div>
+      <div
+        class="flex-column justify-content-center align-items-center"
+        id="Services"
+      >
+        <h1 class="mb-0">Services</h1>
+        <p class="mx-auto w-75">
+          Looking for affordable cosplays? We got you! Take a peek at our
+          Services and Gallery and search for your next dream cosplan at our
+          shop!
+        </p>
+        <a href="services.html" class="d-inline text-decoration-none">
+          <input class="linkButton" type="button" value="More" />
+        </a>
+      </div>
+    </div>
+
+    <div
+      id="gallery"
+      class="my-5 container-fluid justify-content-center align-items-center text-center"
+      >
+      <h1 class="my-2">Gallery</h1>
+      <div class="my-2 img d-flex justify-content-center align-items-center">
+        <img
+          src="images/item-image/Gwen - LoL.jpg"
+          class="mx-1"
+        />
+        <img
+          src="images/item-image/Howl Black & Bird - Howl's Moving Castle.jpg"
+          class="mx-1"
+        />
+      </div>
+      <a href="gallery.html" class="d-inline text-decoration-none">
+        <input class="linkButton" type="button" value="More" />
+      </a>
+    </div>
+
+    <!-- FOOTER -->
+    <div
+      class="container-fluid position-relative sticky-bottom bg-primary mb-0"
+      id="footer"
+    >
+      <div class="d-flex flex-column">
+        <div>
+          <img src="images/facebookIcon.png" class="icon me-2 my-1" />Miwacle
+          Cosplay Rentals / Miwah Coser
+        </div>
+        <div>
+          <img src="images/phoneIcon.png" class="icon me-2 my-1" />09217284200
+        </div>
+        <div>
+          <img
+            src="images/emailIcon.png"
+            class="icon me-2 my-1"
+          />miwahcos@gmail.com
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+
+
+<!-- <div
+        class="flex-column justify-content-center align-items-center"
+        id="Gallery"
+      >
+        <h1>Gallery</h1>
+        <div class="d-flex flex-nowrap justify-content-center">
+          <img
+            src="images/item-image/Gwen - LoL.jpg"
+            alt=""
+            class="object-fit object-center mx-1"
+          />
+          <img
+            src="images/item-image/Howl - Howl's Moving Castle.jpg"
+            alt=""
+            class="object-cover object-center mx-1"
+          />
+        </div>
+        <a href="gallery.html" class="text-decoration-none">
+          <input class="linkButton" type="button" value="More" />
+        </a>
+      </div> -->
