@@ -5,313 +5,313 @@ Highlighted (yellow) -- EACA86
 */
 
 @font-face {
-    font-family: laSignora;
-    src: url(fonts/LaSignora-DemoVersion-Regular.otf);
-  }
-  
-  @font-face {
-    font-family: theBlowar;
-    src: url(fonts/TheBlowarRegular-d91mZ.ttf);
-  }
-  
-  @font-face {
-    font-family: bismark;
-    src: url(fonts/Bismarck.otf);
-  }
-  
-  :root {
-    --dark-blue: #03032b;
-    --darker-white: #d8cfc5;
-    --gold-yellow: #eaca86;
-  }
-  
-  * {
-    font-family: "laSignora";
-  }
-  
-  body {
-    font-size: 1.4rem;
-    background-image: url("images/MIWACLE-BACKGROUND.png");
-    background-size: cover;
-  }
-  
-  h1 {
-    font-size: 6rem;
-    font-family: "bismark";
-  }
-  
-  #logo {
-    width: 75px;
-    height: 75px;
-  }
-  
-  .bg-dark-blue {
-    background-color: #03032b;
-  }
-  
-  .nav-item a {
-    color: #d8cfc5;
-  }
-  
-  #a {
-    width: 494.4px;
-    height: 251.52px;
-  }
-  
-  .text-specialYellow {
-    color: #eaca86;
-  }
-  
-  nav {
-    margin-bottom: 10vh;
-  }
-  
-  #frame {
-    width: 580.8px;
-    height: 580.8px;
-  }
-  
-  #frame + img {
-    width: 448.8px;
-    height: 448.8px;
-  }
-  #gal{
-    display: block;
-    margin: 0% auto;
-    height:350px;
-    width: auto;
-  }
-  #galrev{
-    display: block;
-    margin: 0% auto;
-    height:350px;
-    width: auto;
-  }
-  
-  /* NAV CLASSES AND IDS*/
-  #logo {
-    width: 75px;
-    height: 75px;
-  }
+  font-family: laSignora;
+  src: url(fonts/LaSignora-DemoVersion-Regular.otf);
+}
 
-  .nav-link {
-    color: #d8cfc5; 
-    transition: color 0.25s ease, transform 0.25s ease, font-size 0.25s ease;
-  }
-  
-  .nav-link:hover {
-    color: var(--gold-yellow) !important;
-    transform: scale(1.1);      
-    font-size: 1.6rem;         
-    top: 0;
-    left: 0;
-    width: 110%; /* Adjust the width as needed */
-    height: 110%; /* Adjust the height as needed */
-    transform: scale(1.1);
-    transform-origin: center;
-  }
+@font-face {
+  font-family: theBlowar;
+  src: url(fonts/TheBlowarRegular-d91mZ.ttf);
+}
 
-  .nav-item a {
-    color: #d8cfc5;
-  }
+@font-face {
+  font-family: bismark;
+  src: url(fonts/Bismarck.otf);
+}
 
-  /* PASTED LANG FROM MY TEST HTML/CSS */
-  .image-grid {
-    display: grid;
-    grid-template: 250px / 250px;
-  }
-  
-  .image-grid img {
-    width: 250px;
-    height: 250px;
-    grid-row: 1/2;
-    grid-column: 1/2;
-  }
-  
-  .text-color-yellow {
-    color: #cf920f;
-  }
-  
-  .text-color-gold-yellow {
-    color: var(--gold-yellow) !important;
-  }
-  
-  #item-container {
-    height: 80vh;
-    max-height: 80vh !important;
-    overflow-y: scroll;
-    border: 5px solid var(--gold-yellow);
-    border-radius: 1rem;
-  
-    background-color: #00000050;
-  }
-  
-  #item-container::-webkit-scrollbar {
-    width: 0.75rem;
-  }
-  
-  #item-container::-webkit-scrollbar-track {
-    background-color: rgba(0, 0, 0, 0);
-  }
-  
-  #item-container::-webkit-scrollbar-thumb {
-    background-color: hsla(41, 70%, 72%, 0.5);
-    border-radius: 1rem;
-  }
-  
-  #item-container::-webkit-scrollbar-thumb:hover {
-    background-color: hsla(41, 70%, 72%, 0.25);
-  }
-  
-  .item {
-    display: flex;
-  }
-  
-  .testimage {
-    height: 250px;
-    width: 250px;
-    grid-row: 1/2;
-    grid-column: 1/2;
-  }
-  
-  .my-grid {
-    display: grid;
-    grid-template: 250px/ 250px;
-  }
-  
-  #filter {
-    padding: 0.5rem 1rem;
-    border: 5px solid var(--gold-yellow);
-    border-radius: 15px;
-    background-color: var(--dark-blue);
-    color: white;
-  }
-  
-  /* #filter:hover {
-    background-color: black;
-  } */
-  
-  #order {
-    border: 5px solid var(--gold-yellow);
-    border-radius: 1rem;
-  
-    color: white;
-    font-size: 2rem;
-    text-decoration: none;
-  
-    background-color: var(--dark-blue);
-  
-    padding: 0.5rem 2rem;
-  }
-  
-  #footer {
-    padding: 2rem;
-    background-image: url("images/MIWACLE-FOOTER-BG.png");
-    background-size: cover;
-  }
-  
-  #footer * {
-    font-family: "theBlowar";
-    color: white;
-  }
-  
-  .icon {
-    width: 2rem;
-    height: 2rem;
-  }
-  
-  .nav-link:hover {
-    color: var(--gold-yellow) !important;
-  }
-  
+:root {
+  --dark-blue: #03032b;
+  --darker-white: #d8cfc5;
+  --gold-yellow: #eaca86;
+}
+
+* {
+  font-family: "laSignora";
+}
+
+body {
+  font-size: 1.4rem;
+  background-image: url("images/MIWACLE-BACKGROUND.png");
+  background-size: cover;
+}
+
+h1 {
+  font-size: 6rem;
+  font-family: "bismark";
+}
+
+#logo {
+  width: 75px;
+  height: 75px;
+}
+
+.bg-dark-blue {
+  background-color: #03032b;
+}
+
+.nav-item a {
+  color: #d8cfc5;
+}
+
+#a {
+  width: 494.4px;
+  height: 251.52px;
+}
+
+.text-specialYellow {
+  color: #eaca86;
+}
+
+nav {
+  margin-bottom: 10vh;
+}
+
+#frame {
+  width: 580.8px;
+  height: 580.8px;
+}
+
+#frame + img {
+  width: 448.8px;
+  height: 448.8px;
+}
+#gal{
+  display: block;
+  margin: 0% auto;
+  height:350px;
+  width: auto;
+}
+#galrev{
+  display: block;
+  margin: 0% auto;
+  height:350px;
+  width: auto;
+}
+
+/* NAV CLASSES AND IDS*/
+#logo {
+  width: 75px;
+  height: 75px;
+}
+
+.nav-link {
+  color: #d8cfc5; 
+  transition: color 0.25s ease, transform 0.25s ease, font-size 0.25s ease;
+}
+
+.nav-link:hover {
+  color: var(--gold-yellow) !important;
+  transform: scale(1.1);      
+  font-size: 1.6rem;         
+  top: 0;
+  left: 0;
+  width: 110%; /* Adjust the width as needed */
+  height: 110%; /* Adjust the height as needed */
+  transform: scale(1.1);
+  transform-origin: center;
+}
+
+.nav-item a {
+  color: #d8cfc5;
+}
+
+/* PASTED LANG FROM MY TEST HTML/CSS */
+.image-grid {
+  display: grid;
+  grid-template: 250px / 250px;
+}
+
+.image-grid img {
+  width: 250px;
+  height: 250px;
+  grid-row: 1/2;
+  grid-column: 1/2;
+}
+
+.text-color-yellow {
+  color: #cf920f;
+}
+
+.text-color-gold-yellow {
+  color: var(--gold-yellow) !important;
+}
+
+#item-container {
+  height: 80vh;
+  max-height: 80vh !important;
+  overflow-y: scroll;
+  border: 5px solid var(--gold-yellow);
+  border-radius: 1rem;
+
+  background-color: #00000050;
+}
+
+#item-container::-webkit-scrollbar {
+  width: 0.75rem;
+}
+
+#item-container::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+#item-container::-webkit-scrollbar-thumb {
+  background-color: hsla(41, 70%, 72%, 0.5);
+  border-radius: 1rem;
+}
+
+#item-container::-webkit-scrollbar-thumb:hover {
+  background-color: hsla(41, 70%, 72%, 0.25);
+}
+
+.item {
+  display: flex;
+}
+
+.testimage {
+  height: 250px;
+  width: 250px;
+  grid-row: 1/2;
+  grid-column: 1/2;
+}
+
+.my-grid {
+  display: grid;
+  grid-template: 250px/ 250px;
+}
+
+#filter {
+  padding: 0.5rem 1rem;
+  border: 5px solid var(--gold-yellow);
+  border-radius: 15px;
+  background-color: var(--dark-blue);
+  color: white;
+}
+
+/* #filter:hover {
+  background-color: black;
+} */
+
+#order {
+  border: 5px solid var(--gold-yellow);
+  border-radius: 1rem;
+
+  color: white;
+  font-size: 2rem;
+  text-decoration: none;
+
+  background-color: var(--dark-blue);
+
+  padding: 0.5rem 2rem;
+}
+
+#footer {
+  padding: 2rem;
+  background-image: url("images/MIWACLE-FOOTER-BG.png");
+  background-size: cover;
+}
+
+#footer * {
+  font-family: "theBlowar";
+  color: white;
+}
+
+.icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+.nav-link:hover {
+  color: var(--gold-yellow) !important;
+}
+
 /* Mobile-first approach: Default styling applies to mobile and small screens */
 @media (max-width: 760px) {
 
-  body {
-      font-size: 1.2rem; /* Reduce font size for smaller screens */
-  }
-  #logo {
-      width: 50px; /* Smaller logo */
-      height: 50px;
-  }
+body {
+    font-size: 1.2rem; /* Reduce font size for smaller screens */
+}
+#logo {
+    width: 50px; /* Smaller logo */
+    height: 50px;
+}
 
-  nav {
-      margin-bottom: 5vh; /* Reduce margin on smaller screens */
-  }
-  
-  #a, h1{
-    margin-top: 10vh;
-  }
+nav {
+    margin-bottom: 5vh; /* Reduce margin on smaller screens */
+}
 
-  /* Adjust layout for image grid */
-  .image-grid {
-      grid-template: 1fr / 2fr; /* Single column layout */
-  }
+#a, h1{
+  margin-top: 10vh;
+}
 
-  .image-grid img {
-      width: 100%;
-      height: 100%; /* Make images responsive */
-  }
+/* Adjust layout for image grid */
+.image-grid {
+    grid-template: 1fr / 2fr; /* Single column layout */
+}
 
-  .testimage {
-      width: 100%; /* Ensure test images fill container */
-      height: auto;
-  }
+.image-grid img {
+    width: 100%;
+    height: 100%; /* Make images responsive */
+}
 
-  /* Adjust containers */
-  #frame, #frame + img {
-      width: 100%; /* Make images and frames full width */
-      height: auto;
-  }
+.testimage {
+    width: 100%; /* Ensure test images fill container */
+    height: auto;
+}
 
-  #gal, #galrev {
-      height: 200px; /* Smaller images on mobile */
-      width: 100%;
-  }
+/* Adjust containers */
+#frame, #frame + img {
+    width: 100%; /* Make images and frames full width */
+    height: auto;
+}
 
-  #item-container {
-      height: 60vh; /* Reduce height of item container */
-  }
+#gal, #galrev {
+    height: 200px; /* Smaller images on mobile */
+    width: 100%;
+}
 
-  /* Adjust font size for buttons */
-  #order {
-      font-size: 1.6rem; /* Smaller font size for buttons */
-      padding: 0.5rem 1.5rem; /* Reduce padding */
-  }
+#item-container {
+    height: 60vh; /* Reduce height of item container */
+}
 
-  #filter {
-      font-size: 1.2rem; /* Smaller font size for filter */
-      padding: 0.5rem 1rem;
-  }
+/* Adjust font size for buttons */
+#order {
+    font-size: 1.6rem; /* Smaller font size for buttons */
+    padding: 0.5rem 1.5rem; /* Reduce padding */
+}
 
-  /* Make footer more compact */
-  #footer {
-      padding: 1rem;
-  }
+#filter {
+    font-size: 1.2rem; /* Smaller font size for filter */
+    padding: 0.5rem 1rem;
+}
+
+/* Make footer more compact */
+#footer {
+    padding: 1rem;
+}
 }
 
 /* Larger screen behavior (tablet and up) */
 @media (min-width: 761px) {
-  body {
-      font-size: 1.4rem; /* Standard font size for tablets and up */
-  }
+body {
+    font-size: 1.4rem; /* Standard font size for tablets and up */
+}
 
-  h1 {
-      font-size: 6rem; /* Standard heading size for larger screens */
-  }
+h1 {
+    font-size: 6rem; /* Standard heading size for larger screens */
+}
 
-  /* Restore original grid layout */
-  .image-grid {
-      grid-template: 250px / 250px; /* Two columns for larger screens */
-  }
+/* Restore original grid layout */
+.image-grid {
+    grid-template: 250px / 250px; /* Two columns for larger screens */
+}
 
-  .testimage {
-      width: 250px;
-      height: 250px;
-  }
+.testimage {
+    width: 250px;
+    height: 250px;
+}
 
-  #gal, #galrev {
-      height: 350px;
-      width: auto;
-  }
+#gal, #galrev {
+    height: 350px;
+    width: auto;
+}
 }
