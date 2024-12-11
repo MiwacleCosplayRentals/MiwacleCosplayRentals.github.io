@@ -202,17 +202,6 @@ h1 {
   grid-area: text;
 }
 
-/* #pagesContainer img {
-  width: 40%;
-  min-width: 250px;
-  max-width: 325px;
-  min-height: 250px;
-  max-height: 325px;
-
-  object-fit: cover;
-  object-position: center;
-} */
-
 /* VISION MISSION CONTAINER */
 #gallery {
   display: grid;
